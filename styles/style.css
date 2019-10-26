@@ -1,0 +1,228 @@
+@font-face {
+  font-family: aniron;
+  src: url(../fonts/Aniron-7BaP.ttf);
+}
+
+body {
+  font-family: aniron, sans-serif;
+}
+
+.navbar {
+  padding: .8rem;
+  background-color: orangered;
+  color: #f3f3f3;
+}
+
+.navbar-nav li {
+  padding: 0 2rem;
+}
+
+.navbar-nav li:not(:last-child) {
+  border-right: solid #FFBFBF 1px;
+}
+
+.nav-link {
+  font-size: 1.1em;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: orangered;
+  color: #f3f3f3;
+  padding-top: 2rem;
+}
+
+footer a {
+  padding: 10px;
+  list-style: none;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.5rem;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #FFBFBF;
+}
+
+#side_list {
+  font-weight: bold;
+}
+
+#side_list img {
+  margin: 1rem;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section p {
+  font-size: 2rem;
+}
+
+.the_one_ring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ring1 {
+  width: 80px;
+  height: 80px;
+  border: 8px solid orangered;
+  background-color: transparent;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 4px 4px 4px #cc3700, 4px 4px 4px #cc3700;
+          box-shadow: inset 4px 4px 4px #cc3700, 4px 4px 4px #cc3700;
+  margin: 10px 30px;
+}
+
+.ring2 {
+  width: 150px;
+  height: 150px;
+  border: 15px solid yellow;
+  background-color: transparent;
+  border-radius: 75px;
+  -webkit-box-shadow: inset 7.5px 7.5px 7.5px #cccc00, 7.5px 7.5px 7.5px #cccc00;
+          box-shadow: inset 7.5px 7.5px 7.5px #cccc00, 7.5px 7.5px 7.5px #cccc00;
+  margin: 10px 30px;
+}
+
+.many_rings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.many_rings .rings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ring3 {
+  content: "$i == 3";
+  width: 45px;
+  height: 45px;
+  border: 4.5px solid #464646;
+  background-color: transparent;
+  border-radius: 22.5px;
+  -webkit-box-shadow: inset 2.25px 2.25px 2.25px #2d2d2d, 2.25px 2.25px 2.25px #2d2d2d;
+          box-shadow: inset 2.25px 2.25px 2.25px #2d2d2d, 2.25px 2.25px 2.25px #2d2d2d;
+  margin: 10px 30px;
+  margin-right: -50px;
+}
+
+.ring4 {
+  content: "$i == 4";
+  width: 60px;
+  height: 60px;
+  border: 6px solid #464646;
+  background-color: transparent;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 3px 3px 3px #2d2d2d, 3px 3px 3px #2d2d2d;
+          box-shadow: inset 3px 3px 3px #2d2d2d, 3px 3px 3px #2d2d2d;
+  margin: 10px 30px;
+  margin-right: -50px;
+}
+
+.ring5 {
+  content: "$i == 5";
+  width: 75px;
+  height: 75px;
+  border: 7.5px solid #464646;
+  background-color: transparent;
+  border-radius: 37.5px;
+  -webkit-box-shadow: inset 3.75px 3.75px 3.75px #2d2d2d, 3.75px 3.75px 3.75px #2d2d2d;
+          box-shadow: inset 3.75px 3.75px 3.75px #2d2d2d, 3.75px 3.75px 3.75px #2d2d2d;
+  margin: 10px 30px;
+  margin-right: -50px;
+}
+
+.ring6 {
+  content: "$i == 6";
+  width: 90px;
+  height: 90px;
+  border: 9px solid #464646;
+  background-color: transparent;
+  border-radius: 45px;
+  -webkit-box-shadow: inset 4.5px 4.5px 4.5px #2d2d2d, 4.5px 4.5px 4.5px #2d2d2d;
+          box-shadow: inset 4.5px 4.5px 4.5px #2d2d2d, 4.5px 4.5px 4.5px #2d2d2d;
+  margin: 10px 30px;
+  margin-right: -50px;
+}
+
+.ring7 {
+  content: "$i == 7";
+  width: 105px;
+  height: 105px;
+  border: 10.5px solid #464646;
+  background-color: transparent;
+  border-radius: 52.5px;
+  -webkit-box-shadow: inset 5.25px 5.25px 5.25px #2d2d2d, 5.25px 5.25px 5.25px #2d2d2d;
+          box-shadow: inset 5.25px 5.25px 5.25px #2d2d2d, 5.25px 5.25px 5.25px #2d2d2d;
+  margin: 10px 30px;
+  margin-right: -50px;
+}
+
+.ring8 {
+  content: "$i == 8";
+  width: 120px;
+  height: 120px;
+  border: 12px solid #464646;
+  background-color: transparent;
+  border-radius: 60px;
+  -webkit-box-shadow: inset 6px 6px 6px #2d2d2d, 6px 6px 6px #2d2d2d;
+          box-shadow: inset 6px 6px 6px #2d2d2d, 6px 6px 6px #2d2d2d;
+  margin: 10px 30px;
+  margin-right: -50px;
+}
+/*# sourceMappingURL=style.css.map */

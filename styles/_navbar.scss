@@ -1,0 +1,19 @@
+.navbar {
+    padding: .8rem;
+    background-color:$mainColor;
+    color: $textColor;
+}
+
+.navbar-nav li {
+    padding: 0 2rem;
+    &:not(:last-child) {
+        border-right: solid #FFBFBF 1px;
+    }
+}
+
+.nav-link {
+    font-size: 1.1em;
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,59 @@
+@import "./fonts";
+@import "./variables";
+@import "./navbar";
+@import "./footer";
+
+@mixin ring($size, $color) {
+    width: $size;
+	height: $size;
+    border: $size/10 solid $color;
+    background-color: transparent;
+    border-radius: $size/2;
+    box-shadow: inset $size/20 $size/20 $size/20 darken($color, $amount: 10), $size/20 $size/20 $size/20 darken($color, $amount: 10);
+    margin: 10px 30px;
+}
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+section{
+    @include flex();
+    flex-direction: column;
+    p {
+        font-size: 2rem;
+    }
+}
+
+.the_one_ring{
+    @include flex();
+    justify-content: space-around;
+}
+
+.ring1 {
+    @include ring(80px, $mainColor);
+}
+
+.ring2 {
+    @include ring(150px, yellow);
+}
+
+.many_rings{
+    @include flex();
+    flex-direction: column;
+    .rings {
+        @include flex();
+        flex-direction: row;
+    }
+}
+
+@for $i from 3 through 8 {
+    .ring#{$i} {
+        content: "$i == #{$i}";
+        @include ring($i*15px, rgb(70, 70, 70));
+        margin-right: -50px;
+    }
+}

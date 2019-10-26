@@ -1,0 +1,23 @@
+footer {
+    background-color: $mainColor;
+    color: $textColor;
+    padding-top: 2rem;
+    a {
+        padding: 10px;
+        list-style: none;
+        text-decoration: none;
+        color:  $textColor;
+        font-size: 1.5rem;
+        &:hover {
+            text-decoration: none;
+            color: #FFBFBF;
+        }
+    }
+}
+
+#side_list {
+    font-weight: bold;
+    img {
+        margin: 1rem;
+    }
+}
